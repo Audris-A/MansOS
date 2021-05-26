@@ -41,7 +41,7 @@ void eepromRead(uint16_t addr, void *buf, size_t len);
 //! Write to EEPROM
 void eepromWrite(uint16_t addr, const void *buf, size_t len);
 
-extern inline void eepromInit(void);
+static void eepromInit(void);
 
 // implementation
 #include <eeprom_hal.h> /* Will define EEPROM_SIZE */

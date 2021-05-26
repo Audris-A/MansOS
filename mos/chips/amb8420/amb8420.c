@@ -2,12 +2,12 @@
 #include <print.h>
 #include <delay.h>
 #include <string.h>
-#include <errors.h>
+//#include <errors.h>
 #include <alarms.h>
 #include <hil/atomic.h>
 #include <kernel/threads/threads.h>
 
-#include <leds.h>
+/*#include <leds.h>
 
 #if DEBUG
 #define RADIO_DEBUG 1
@@ -849,4 +849,4 @@ static void onRadioReset(void *x)
     amb8420ResetIfInactive();
 #endif
     alarmSchedule(&radioResetTimer, RADIO_RESET_INTERVAL);
-}
+}*/

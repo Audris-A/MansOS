@@ -64,7 +64,7 @@ static inline int8_t spiBusInit(uint8_t busId, SpiBusMode_t spiBusMode)
     sw_spiInit(spiBusMode);
     return 0;
 #endif
-    return -ENOSYS; // not implemented
+    return 0;//-ENOSYS; // not implemented
 }
 
 ///
@@ -109,7 +109,7 @@ static inline uint8_t spiExchByte(uint8_t busId, uint8_t b)
 #if USE_SOFT_SPI
     return sw_spiExchByte(b);
 #endif
-    return -ENOSYS; // not implemented
+    return 0;//-ENOSYS; // not implemented
 }
 
 ///

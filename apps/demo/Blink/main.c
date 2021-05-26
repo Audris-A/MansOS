@@ -26,13 +26,24 @@
 //-------------------------------------------
 
 #include "stdmansos.h"
+#include "stdtypes.h"
+#include "spi.h"
+#include "serial.h"
 
 void appMain(void)
 {
+	uint8_t spiBusId = 1;
+    uint8_t serialBusId = 0;
+    uint32_t baudrate = 115200;
+	uint8_t config = 0;
+
+    uint8_t resSerial = serialInit(serialBusId, baudrate, config);
+    spiBusDisable(spiBusId);
+
     while (1) {
         // change the default LED status
         ledToggle();
         // wait for 1000 milliseconds
-        mdelay(1000);
+        mdelay(100);
     }
 }

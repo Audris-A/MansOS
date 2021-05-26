@@ -32,7 +32,7 @@
 #include "stdtypes.h"
 #include <stdlib.h> // include file where NULL is defined
 #include <limits.h> // INT_MAX etc
-#include <string.h> // memcpy()
+//#include <string.h> // memcpy()
 
 
 //! Enable interrupts (architecture-specific macro)

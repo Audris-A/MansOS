@@ -118,7 +118,7 @@ enum {
     power_timer0_enable(); \
     /* CTC mode, compare with OCRxA */ \
     /* no clock source at the moment - timer not running */ \
-    TCCR0A = (1 << CTC0); \
+    //TCCR0A = (1 << CTC0); \
     /* set time slice to jiffy (1ms) */ \
     OCR0A = PLATFORM_ALARM_TIMER_PERIOD - 1; \
     /* Enable Compare-A interrupt */ \

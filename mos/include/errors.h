@@ -33,10 +33,10 @@
 #if defined(PLATFORM_PC) || defined(PLATFORM_ATMEGA)
 
 // use error code definitions from standard headers
-#include <errno.h>
-#include <string.h>
+//#include <errno.h>
+//#include <string.h>
 
-#else
+//#else
 
 //===========================================================
 // Data types and constants
